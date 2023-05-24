@@ -4,49 +4,77 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1832a50-2978-4991-afbc-23d49610f1c2" name="Changes" comment="service discovery">
-      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/amqp/RabbitMQMessageProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/java/com/apigw/ApiGWApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/clients/fraud/FraudClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/clients/notification/NotificationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/clients/notification/NotificationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/Notification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/NotificationApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/NotificationConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/NotificationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/java/com/notification/rabbitmq/NotificationConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c1832a50-2978-4991-afbc-23d49610f1c2" name="Changes" comment="load balancer, api gateway, rabbitMQ">
+      <change afterPath="$PROJECT_DIR$/amqp/target/amqp-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/target/apigw-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/target/apigw-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apigw/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/target/clients-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/customer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/customer-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/compile/default-cli/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/compile/default-cli/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eureka-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/src/main/resources/application-docker.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/target/fraud-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/target/fraud-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fraud/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/classes/com/notification/NotificationConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/classes/com/notification/rabbitmq/NotificationConsumer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/notification-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification/target/notification-1.0-SNAPSHOT.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amqp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apigw/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/clients/fraud/FraudClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/clients/fraud/FraudClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/clients/notification/NotificationClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/clients/notification/NotificationClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/clients/fraud/FraudClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/target/classes/com/clients/fraud/FraudClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/target/classes/com/clients/notification/NotificationClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/clients/target/classes/com/clients/notification/NotificationClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/customer/FraudCheckResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/customer/CustomerConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/target/classes/com/customer/CustomerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/customer/CustomerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/customer/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/customer/target/classes/com/customer/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/target/classes/com/customer/FraudCheckResponse.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fraud/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/FraudCheckResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/clients/fraud/FraudCheckResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/FraudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/java/com/fraud/FraudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/fraud/FraudCheckResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fraud/target/classes/com/fraud/FraudController.class" beforeDir="false" afterPath="$PROJECT_DIR$/fraud/target/classes/com/fraud/FraudController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +104,11 @@
       <MavenGeneralSettings>
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="build-docker-image" />
+      </list>
     </option>
   </component>
   <component name="ProjectId" id="2Ne2WWvyK8vx2fFcFBtWbwjrwKW" />
@@ -155,6 +188,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FraudApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fraud" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fraud.FraudApplication" />
@@ -192,6 +232,7 @@
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Spring Boot.CustomerApplication 2" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.ApiGWApplication" />
       <item itemvalue="Spring Boot.NotificationApplication" />
       <item itemvalue="Spring Boot.CustomerApplication" />
@@ -199,11 +240,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ApiGWApplication" />
-        <item itemvalue="Spring Boot.NotificationApplication" />
-        <item itemvalue="Spring Boot.FraudApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.FraudApplication" />
+        <item itemvalue="Spring Boot.ApiGWApplication" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Spring Boot.NotificationApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +260,7 @@
       <workItem from="1683623742482" duration="12386000" />
       <workItem from="1683740410489" duration="612000" />
       <workItem from="1684160200245" duration="14314000" />
-      <workItem from="1684827612780" duration="18277000" />
+      <workItem from="1684827612780" duration="36790000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1684843970412</created>
@@ -235,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684849580169</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="load balancer, api gateway, rabbitMQ">
+      <created>1684873642636</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684873642636</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,15 +303,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="service discovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="service discovery" />
+    <MESSAGE value="load balancer, api gateway, rabbitMQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="load balancer, api gateway, rabbitMQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/fraud/src/main/java/com/fraud/FraudController.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/notification/src/main/java/com/notification/NotificationController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
